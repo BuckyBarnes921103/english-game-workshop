@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>英文教育遊戲小工坊</title>
+<style>
+:root{--bg:#fbf7f0;--card:#fff;--ink:#2b2622;--sub:#6b625a;--line:#e8dfd3;--a:#c8553d;--b:#3a86ff;--c:#2a9d8f}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1b19;--card:#28251f;--ink:#f1ece4;--sub:#b3a99d;--line:#3a352e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.7}
+main{max-width:920px;margin:0 auto;padding:48px 16px 64px}
+h1{font-size:clamp(28px,5vw,40px);margin:0 0 8px;letter-spacing:.02em}
+.lead{color:var(--sub);margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;color:inherit;border-top:5px solid var(--k);transition:transform .15s}
+a.card:hover{transform:translateY(-3px)}
+.tag{display:inline-block;font-size:13px;color:#fff;background:var(--k);border-radius:99px;padding:2px 10px;margin-bottom:10px}
+.card h2{font-size:20px;margin:0 0 6px}
+.card p{margin:0;color:var(--sub);font-size:15px}
+.meta{margin-top:12px;font-size:13px;color:var(--sub)}
+section{margin-top:44px}
+h3{font-size:18px;margin:0 0 10px}
+ol{margin:0;padding-left:22px;color:var(--sub)}
+footer{margin-top:48px;font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+<main>
+  <h1>英文教育遊戲小工坊</h1>
+  <p class="lead">國中七年級英文文法，做成三種可以直接在瀏覽器玩的遊戲。不用安裝、不用登入，手機電腦都能開。</p>
+
+  <div class="grid">
+    <a class="card" style="--k:var(--a)" href="games/現在進行式密室.html">
+      <span class="tag">闖關密室</span>
+      <h2>🎬 此刻電影院</h2>
+      <p>電影院的人都不見了。用現在進行式解開五道機關，讓電影準時開演。</p>
+      <div class="meta">現在進行式・V-ing 變化・問句｜5 關・3 顆愛心</div>
+    </a>
+    <a class="card" style="--k:var(--b)" href="games/過去式卡牌對決.html">
+      <span class="tag">卡牌對戰</span>
+      <h2>🃏 時光卡牌</h2>
+      <p>規則動詞隊對上不規則動詞隊，抽卡搶分，每兩張穿插一題過去式問答。</p>
+      <div class="meta">過去式・-ed 發音・Did 問句｜單人對電腦或兩隊對抗</div>
+    </a>
+    <a class="card" style="--k:var(--c)" href="games/時光村精靈收集.html">
+      <span class="tag">像素地圖探索</span>
+      <h2>⏰ 時光村</h2>
+      <p>走遍村子，在草叢裡遇到時鐘精靈，答對 in / on / at 就能收服牠們。</p>
+      <div class="meta">時間介系詞・固定用法｜5 隻精靈・鑰匙與門</div>
+    </a>
+  </div>
+
+  <section>
+    <h3>上課怎麼用</h3>
+    <ol>
+      <li>投影出來全班一起玩，或請學生用手機各自打開連結。</li>
+      <li>答錯會跳出「為什麼錯」的說明，比直接公布答案更好用。</li>
+      <li>卡牌對戰可以分兩組輪流抽卡，適合當複習課的收尾。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>遊戲原始資料</h3>
+    <ol>
+      <li><code>games-src/</code> 是每個遊戲的題目與規則資料檔，改裡面的題目就能做出新版本。</li>
+    </ol>
+  </section>
+
+  <footer>遊戲引擎來自教育遊戲工作坊公開的教材；題目與關卡為本站自行設計。</footer>
+</main>
+</body>
+</html>
